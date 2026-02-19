@@ -181,10 +181,12 @@ $emailSent = mail($to, $emailSubject, $emailBody, $headers);
 
 if (!$emailSent) {
     http_response_code(500);
-    logError("Failed to send email to Emma for: $name ($email)");
+    $errorMsg = error_get_last();
+    logError("Failed to send email to Emma for: $name ($email). Error: " . json_encode($errorMsg));
     echo json_encode([
         'success' => false,
-        'message' => 'Sorry, there was an error sending your message. Please try again or contact us directly.'
+        'message' => 'Sorry, there was an error sending your message. Please try again or contact us directly.',
+        'debug' => 'Check server logs for details. mail() function may be disabled.'
     ]);
     exit;
 }
