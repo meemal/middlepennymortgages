@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Heart, Shield, Banknote, Home, Building2, Phone, ArrowRight } from 'lucide-react';
 import PageShell from '../components/PageShell';
 import { protectionServices } from '../data/servicesData';
 import { siteData } from '../data/siteData';
+import { updatePageMeta, generateBreadcrumbSchema, generateServiceSchema, defaultSEO } from '../utils/seoHelpers';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Heart,
@@ -29,6 +30,25 @@ const iconColors = [
 ];
 
 export default function ProtectionPage() {
+  useEffect(() => {
+    updatePageMeta({
+      title: 'Protection Insurance | Life, Critical Illness & Income Protection | Scotland & UK',
+      description: 'Expert protection insurance advice including life insurance, critical illness cover, income protection, and buildings & contents insurance. Safeguard your home, income, and family with FCA regulated advice.',
+      keywords: 'life insurance, critical illness cover, income protection, protection insurance, buildings and contents insurance, family protection, mortgage protection insurance',
+      canonicalUrl: `${defaultSEO.domain}/protection`,
+      schema: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          generateServiceSchema('Protection Insurance Advisory', 'Comprehensive protection insurance advice including life insurance, critical illness cover, income protection, and property insurance across the UK.'),
+          generateBreadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'Protection Insurance', url: '/protection' },
+          ]),
+        ],
+      },
+    });
+  }, []);
+
   return (
     <PageShell>
       <section className="relative py-24">

@@ -1,0 +1,131 @@
+{
+  "business": {
+    "name": "Middlepenny Mortgage Solutions",
+    "type": "Financial Services - Mortgage Advisory",
+    "established": "2017",
+    "location": {
+      "address": "54 Middlepenny Road, Langbank, PA14 6XE, Scotland",
+      "serviceArea": "United Kingdom (nationwide remote service via Zoom and Teams)"
+    },
+    "contact": {
+      "phone": "0141 465 9215",
+      "mobile": "07468 617786",
+      "email": "emma@middlepennymortgagesolutions.co.uk",
+      "whatsapp": "+447468617786"
+    }
+  },
+  "founder": {
+    "name": "Emma Murphy",
+    "qualifications": [
+      "CMAP Qualified (Certificate in Mortgage Advice and Practice)",
+      "FCA Regulated via HL Partnership Limited"
+    ],
+    "experience": "Nearly a decade in financial services, advising clients since 2017",
+    "background": "Started career in estate agency in 2013, providing deep understanding of property markets before transitioning to mortgage advice"
+  },
+  "services": {
+    "mortgage_advice": {
+      "first_time_buyers": {
+        "description": "Expert guidance for those taking their first step onto the property ladder",
+        "details": "Clear, simple, stress-free process from start to finish. Whole of market access to find the best deals for first-time buyers."
+      },
+      "home_movers": {
+        "description": "Moving to a new home? Assessment of options to find the right mortgage for your next chapter",
+        "details": "Comprehensive market research to secure the best rates for home movers"
+      },
+      "remortgages": {
+        "description": "Coming to the end of your current deal? Market search to secure a rate that works for you",
+        "details": "Proactive advice to avoid moving onto expensive standard variable rates"
+      },
+      "buy_to_let": {
+        "description": "Practical, straightforward advice for landlords at every stage",
+        "details": "Specialist knowledge of buy-to-let mortgages for property investors"
+      }
+    },
+    "protection_insurance": {
+      "life_insurance": "Financial protection for your loved ones in the event of death",
+      "critical_illness_cover": "Lump sum payment if diagnosed with a serious illness covered by the policy",
+      "income_protection": "Monthly income if you cannot work due to illness or injury",
+      "buildings_and_contents": "Protection for your property and possessions"
+    }
+  },
+  "pricing": {
+    "standard_fee": "£395",
+    "fee_structure": "Transparent fixed fee with no hidden charges",
+    "vat": "VAT exempt (financial services)",
+    "fee_includes": [
+      "Initial fact-find to understand circumstances and needs",
+      "Whole-of-market research across available mortgage products",
+      "Clear, tailored recommendation with full explanation",
+      "Preparation and submission of mortgage application",
+      "Liaison with lenders throughout the process",
+      "Support and guidance through to completion"
+    ]
+  },
+  "unique_selling_points": [
+    "CMAP qualified mortgage adviser",
+    "Advising clients since 2017",
+    "Whole of market access",
+    "Nationwide remote advice via Zoom and Teams",
+    "Transparent fixed fee of £395",
+    "FCA regulated through HL Partnership Limited",
+    "Personal, relationship-led approach",
+    "Clear communication without jargon"
+  ],
+  "regulatory": {
+    "status": "FCA Regulated",
+    "regulatory_body": "Financial Conduct Authority",
+    "appointed_representative_of": "HL Partnership Limited",
+    "jurisdiction": "United Kingdom"
+  },
+  "faq": [
+    {
+      "question": "What mortgage services does Middlepenny Mortgage Solutions offer?",
+      "answer": "We provide expert mortgage advice for first-time buyers, home movers, remortgages, and buy-to-let properties across the UK. We also offer protection insurance advice including life insurance, critical illness cover, and income protection."
+    },
+    {
+      "question": "How much does mortgage advice cost?",
+      "answer": "Our standard mortgage advice fee is £395, with transparent pricing and no hidden charges. Financial services are VAT exempt, and your fee is confirmed before you proceed."
+    },
+    {
+      "question": "Is Emma Murphy FCA regulated?",
+      "answer": "Yes, Emma Murphy is an appointed representative of HL Partnership Limited, which is authorised and regulated by the Financial Conduct Authority (FCA)."
+    },
+    {
+      "question": "Do you provide mortgage advice remotely?",
+      "answer": "Yes, we advise clients across the UK via Zoom and Teams, making it convenient to get expert mortgage advice from anywhere in the country."
+    },
+    {
+      "question": "What qualifications does Emma Murphy have?",
+      "answer": "Emma Murphy is CMAP qualified (Certificate in Mortgage Advice and Practice) and has been advising clients since 2017, with nearly a decade of experience in financial services."
+    },
+    {
+      "question": "What is whole of market access?",
+      "answer": "Whole of market access means we can research and recommend mortgages from all available lenders, not just a limited panel. This ensures you get access to the widest range of products and the best deal for your circumstances."
+    },
+    {
+      "question": "Do I need protection insurance with my mortgage?",
+      "answer": "While not mandatory, protection insurance is highly recommended. A mortgage is one of the biggest financial commitments you will make, and protection insurance ensures that if the unexpected happens (illness, injury or death) your home, income and loved ones remain financially secure."
+    },
+    {
+      "question": "What areas do you serve?",
+      "answer": "We serve clients across the entire United Kingdom. While our office is based in Scotland, we provide nationwide remote advice via Zoom and Teams, making our services accessible to anyone in the UK."
+    }
+  ],
+  "keywords_for_ai": [
+    "mortgage adviser Scotland",
+    "mortgage broker UK",
+    "first-time buyer mortgage advice",
+    "remortgage specialist",
+    "buy-to-let mortgage adviser",
+    "CMAP qualified mortgage adviser",
+    "FCA regulated mortgage broker",
+    "whole of market mortgage advice",
+    "protection insurance Scotland",
+    "life insurance adviser UK",
+    "remote mortgage advice",
+    "online mortgage broker",
+    "Emma Murphy mortgage adviser",
+    "Middlepenny Mortgage Solutions"
+  ]
+}

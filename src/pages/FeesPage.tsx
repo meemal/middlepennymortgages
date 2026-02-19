@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CheckCircle, Info, Phone, ArrowRight } from 'lucide-react';
 import PageShell from '../components/PageShell';
 import { siteData } from '../data/siteData';
+import { updatePageMeta, generateBreadcrumbSchema, defaultSEO } from '../utils/seoHelpers';
 
 const feeIncludes = [
   'Initial fact-find to understand your circumstances and needs',
@@ -13,6 +14,19 @@ const feeIncludes = [
 ];
 
 export default function FeesPage() {
+  useEffect(() => {
+    updatePageMeta({
+      title: 'Fees | £395 Transparent Mortgage Advice Fee | No Hidden Charges',
+      description: 'Clear, transparent mortgage advice fee of £395. No hidden charges, VAT exempt financial services. Includes whole-of-market research, application submission, and ongoing support.',
+      keywords: 'mortgage adviser fees, mortgage broker cost, £395 mortgage advice, transparent mortgage fees, no hidden charges, mortgage advice pricing',
+      canonicalUrl: `${defaultSEO.domain}/fees`,
+      schema: generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Fees', url: '/fees' },
+      ]),
+    });
+  }, []);
+
   return (
     <PageShell>
       <section className="relative py-24">

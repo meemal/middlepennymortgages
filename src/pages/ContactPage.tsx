@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, Facebook, Linkedin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import PageShell from '../components/PageShell';
 import { siteData } from '../data/siteData';
+import { updatePageMeta, generateBreadcrumbSchema, defaultSEO } from '../utils/seoHelpers';
 
 interface FormState {
   name: string;
@@ -26,6 +27,19 @@ const initialForm: FormState = {
 };
 
 export default function ContactPage() {
+  useEffect(() => {
+    updatePageMeta({
+      title: 'Contact Us | Get Expert Mortgage Advice | Middlepenny Mortgage Solutions',
+      description: 'Get in touch with Emma Murphy for expert mortgage and protection advice. Call 0141 465 9215, email, or book a free consultation. Serving clients across the UK via Zoom and Teams.',
+      keywords: 'contact mortgage adviser, book mortgage consultation, mortgage advice Scotland, mortgage broker contact, free mortgage consultation',
+      canonicalUrl: `${defaultSEO.domain}/contact`,
+      schema: generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Contact Us', url: '/contact' },
+      ]),
+    });
+  }, []);
+
   const [form, setForm] = useState<FormState>(initialForm);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');

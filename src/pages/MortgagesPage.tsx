@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Home, Users, RefreshCw, Building2, Phone, ArrowRight, CheckCircle, AlertTriangle } from 'lucide-react';
 import PageShell from '../components/PageShell';
 import { mortgageServices } from '../data/servicesData';
 import { siteData } from '../data/siteData';
+import { updatePageMeta, generateBreadcrumbSchema, generateServiceSchema, defaultSEO } from '../utils/seoHelpers';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Home,
@@ -19,6 +20,25 @@ const serviceImages = [
 ];
 
 export default function MortgagesPage() {
+  useEffect(() => {
+    updatePageMeta({
+      title: 'Mortgage Services | First-Time Buyers, Remortgages & Buy-to-Let | Scotland & UK',
+      description: 'Expert mortgage advice for first-time buyers, home movers, remortgages and buy-to-let properties. Whole of market access with transparent £395 fee. FCA regulated adviser serving clients across the UK.',
+      keywords: 'first-time buyer mortgage, remortgage advice, buy-to-let mortgage, home mover mortgage, mortgage broker Scotland, whole of market mortgage adviser, FCA regulated mortgage advice',
+      canonicalUrl: `${defaultSEO.domain}/mortgages`,
+      schema: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          generateServiceSchema('Mortgage Advisory Services', 'Comprehensive mortgage advice for first-time buyers, home movers, remortgages, and buy-to-let properties across the UK.'),
+          generateBreadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'Mortgage Services', url: '/mortgages' },
+          ]),
+        ],
+      },
+    });
+  }, []);
+
   return (
     <PageShell>
       <section className="relative py-24">

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Home, RefreshCw, Building2, Shield, Phone, MessageCircle, ArrowRight, CheckCircle, Star, Users, Award } from 'lucide-react';
 import PageShell from '../components/PageShell';
 import { siteData } from '../data/siteData';
+import { updatePageMeta, generateLocalBusinessSchema, generateFAQSchema, defaultSEO } from '../utils/seoHelpers';
 
 const serviceCards = [
   {
@@ -40,6 +41,43 @@ const trustPoints = [
 ];
 
 export default function HomePage() {
+  useEffect(() => {
+    updatePageMeta({
+      title: 'Middlepenny Mortgage Solutions | Expert Mortgage Adviser Scotland & UK',
+      description: 'Clear, honest mortgage and protection advice from Emma Murphy, a CMAP qualified mortgage adviser. Helping first-time buyers, home movers, remortgages and buy-to-let across the UK since 2017.',
+      keywords: 'mortgage adviser UK, mortgage broker Scotland, first-time buyer mortgage advice, remortgage adviser, buy-to-let mortgage, protection insurance, mortgage advice Scotland, FCA regulated mortgage adviser',
+      canonicalUrl: `${defaultSEO.domain}/`,
+      schema: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          generateLocalBusinessSchema(),
+          generateFAQSchema([
+            {
+              question: 'What mortgage services does Middlepenny Mortgage Solutions offer?',
+              answer: 'We provide expert mortgage advice for first-time buyers, home movers, remortgages, and buy-to-let properties across the UK. We also offer protection insurance advice including life insurance, critical illness cover, and income protection.',
+            },
+            {
+              question: 'How much does mortgage advice cost?',
+              answer: 'Our standard mortgage advice fee is £395, with transparent pricing and no hidden charges. Financial services are VAT exempt, and your fee is confirmed before you proceed.',
+            },
+            {
+              question: 'Is Emma Murphy FCA regulated?',
+              answer: 'Yes, Emma Murphy is an appointed representative of HL Partnership Limited, which is authorised and regulated by the Financial Conduct Authority (FCA).',
+            },
+            {
+              question: 'Do you provide mortgage advice remotely?',
+              answer: 'Yes, we advise clients across the UK via Zoom and Teams, making it convenient to get expert mortgage advice from anywhere in the country.',
+            },
+            {
+              question: 'What qualifications does Emma Murphy have?',
+              answer: 'Emma Murphy is CMAP qualified (Certificate in Mortgage Advice and Practice) and has been advising clients since 2017, with nearly a decade of experience in financial services.',
+            },
+          ]),
+        ],
+      },
+    });
+  }, []);
+
   return (
     <PageShell>
       <section className="relative min-h-[90vh] flex items-center">
@@ -81,10 +119,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="section-heading mb-4">How Can We Help You?</h2>
+            <h2 id="services-heading" className="section-heading mb-4">How Can We Help You?</h2>
             <p className="section-subheading max-w-2xl mx-auto">
               Whether you are buying your first home, moving, remortgaging or investing, Emma provides expert advice tailored to your situation.
             </p>
@@ -115,16 +153,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-brand-grey-light">
+      <section className="py-20 bg-brand-grey-light" aria-labelledby="protection-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div className="relative">
               <img
                 src="/Family_Moving.jpeg"
-                alt="Family moving into their new home"
+                alt="Happy family moving into their new home with protection insurance covering their mortgage and financial security"
                 className="rounded-2xl shadow-lg w-full object-cover h-96 lg:h-full"
+                loading="lazy"
+                width="600"
+                height="400"
               />
-              <div className="absolute -bottom-6 -right-6 bg-brand-teal text-white p-6 rounded-2xl shadow-xl hidden lg:block">
+              <div className="absolute -bottom-6 -right-6 bg-brand-teal text-white p-6 rounded-2xl shadow-xl hidden lg:block" aria-hidden="true">
                 <Shield className="w-8 h-8 mb-2" />
                 <p className="font-semibold text-lg">Protection</p>
                 <p className="text-sm text-white/80">Safeguarding what matters most</p>
@@ -132,10 +173,10 @@ export default function HomePage() {
             </div>
             <div>
               <div className="inline-flex items-center gap-2 text-brand-teal text-sm font-medium mb-4">
-                <Shield className="w-4 h-4" />
+                <Shield className="w-4 h-4" aria-hidden="true" />
                 Protection & Insurance
               </div>
-              <h2 className="section-heading mb-5">Protecting Your Home, Income & Family</h2>
+              <h2 id="protection-heading" className="section-heading mb-5">Protecting Your Home, Income & Family</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 A mortgage is one of the biggest financial commitments you will ever make. Protection insurance ensures that if the unexpected happens (illness, injury or death) your home, income and loved ones remain financially secure.
               </p>
@@ -151,15 +192,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" aria-labelledby="about-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div>
               <div className="inline-flex items-center gap-2 text-brand-teal text-sm font-medium mb-4">
-                <Award className="w-4 h-4" />
+                <Award className="w-4 h-4" aria-hidden="true" />
                 Why Middlepenny
               </div>
-              <h2 className="section-heading mb-5">Advice Built on Trust and Clarity</h2>
+              <h2 id="about-heading" className="section-heading mb-5">Advice Built on Trust and Clarity</h2>
               <p className="text-gray-600 leading-relaxed mb-6 text-base">
                 {siteData.valueStatement}
               </p>
@@ -179,8 +220,11 @@ export default function HomePage() {
             <div className="relative">
               <img
                 src="/Emma_Murphy.JPG"
-                alt="Emma Murphy — Mortgage Adviser"
+                alt="Emma Murphy, CMAP qualified mortgage adviser providing expert mortgage and protection advice across Scotland and the UK"
                 className="rounded-2xl shadow-lg w-full object-cover object-top h-[500px]"
+                loading="lazy"
+                width="600"
+                height="500"
               />
             </div>
           </div>

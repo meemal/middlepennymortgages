@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Award, Clock, Monitor, CheckCircle, ArrowRight, Phone } from 'lucide-react';
 import PageShell from '../components/PageShell';
 import { siteData } from '../data/siteData';
+import { updatePageMeta, generatePersonSchema, generateBreadcrumbSchema, defaultSEO } from '../utils/seoHelpers';
 
 const credentials = [
   { icon: Award, label: 'CMAP Qualified', detail: 'Certificate in Mortgage Advice and Practice' },
@@ -29,6 +30,25 @@ const timeline = [
 ];
 
 export default function AboutPage() {
+  useEffect(() => {
+    updatePageMeta({
+      title: 'About Emma Murphy | CMAP Qualified Mortgage Adviser Scotland',
+      description: 'Meet Emma Murphy, a CMAP qualified mortgage adviser with nearly a decade of experience helping clients across the UK with mortgage and protection advice since 2017.',
+      keywords: 'Emma Murphy mortgage adviser, CMAP qualified, FCA regulated mortgage adviser Scotland, mortgage broker background, experienced mortgage adviser UK',
+      canonicalUrl: `${defaultSEO.domain}/about`,
+      schema: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          generatePersonSchema(),
+          generateBreadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'About Emma Murphy', url: '/about' },
+          ]),
+        ],
+      },
+    });
+  }, []);
+
   return (
     <PageShell>
       <section className="relative py-24">
