@@ -173,7 +173,7 @@ export default function ContactPage() {
                       />
                       <label htmlFor="privacyAccepted" className="text-sm text-gray-700 leading-relaxed">
                         I confirm I have read and understood the{' '}
-                        <a href="/privacy.html" className="text-brand-teal underline hover:text-brand-teal-dark font-medium">
+                        <a href="/privacy" className="text-brand-teal underline hover:text-brand-teal-dark font-medium">
                           Privacy Policy
                         </a>
                         . <span className="text-red-500">*</span>
@@ -196,7 +196,7 @@ export default function ContactPage() {
 
                   <p className="text-xs text-gray-500">
                     Your personal data will be processed in accordance with our{' '}
-                    <a href="/privacy.html" className="text-brand-teal underline">Privacy Policy</a>.
+                    <a href="/privacy" className="text-brand-teal underline">Privacy Policy</a>.
                     Fields marked <span className="text-red-500">*</span> are required.
                   </p>
 

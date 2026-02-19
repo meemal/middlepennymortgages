@@ -43,24 +43,24 @@ export default function SharedFooter() {
           <div>
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/mortgages.html#first-time-buyers" className="hover:text-brand-teal transition-colors">First-Time Buyers</a></li>
-              <li><a href="/mortgages.html#home-movers" className="hover:text-brand-teal transition-colors">Home Movers</a></li>
-              <li><a href="/mortgages.html#remortgages" className="hover:text-brand-teal transition-colors">Remortgages</a></li>
-              <li><a href="/mortgages.html#buy-to-let" className="hover:text-brand-teal transition-colors">Buy-to-Let</a></li>
-              <li><a href="/protection.html" className="hover:text-brand-teal transition-colors">Protection & Insurance</a></li>
+              <li><a href="/mortgages#first-time-buyers" className="hover:text-brand-teal transition-colors">First-Time Buyers</a></li>
+              <li><a href="/mortgages#home-movers" className="hover:text-brand-teal transition-colors">Home Movers</a></li>
+              <li><a href="/mortgages#remortgages" className="hover:text-brand-teal transition-colors">Remortgages</a></li>
+              <li><a href="/mortgages#buy-to-let" className="hover:text-brand-teal transition-colors">Buy-to-Let</a></li>
+              <li><a href="/protection" className="hover:text-brand-teal transition-colors">Protection & Insurance</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/about.html" className="hover:text-brand-teal transition-colors">About Emma</a></li>
-              <li><a href="/fees.html" className="hover:text-brand-teal transition-colors">Fees</a></li>
-              <li><a href="/contact.html" className="hover:text-brand-teal transition-colors">Contact</a></li>
-              <li><a href="/terms.html" className="hover:text-brand-teal transition-colors">Terms of Business</a></li>
-              <li><a href="/privacy.html" className="hover:text-brand-teal transition-colors">Privacy Policy</a></li>
-              <li><a href="/complaints.html" className="hover:text-brand-teal transition-colors">Complaints Policy</a></li>
-              <li><a href="/cookies.html" className="hover:text-brand-teal transition-colors">Cookies Policy</a></li>
+              <li><a href="/about" className="hover:text-brand-teal transition-colors">About Emma</a></li>
+              <li><a href="/fees" className="hover:text-brand-teal transition-colors">Fees</a></li>
+              <li><a href="/contact" className="hover:text-brand-teal transition-colors">Contact</a></li>
+              <li><a href="/terms" className="hover:text-brand-teal transition-colors">Terms of Business</a></li>
+              <li><a href="/privacy" className="hover:text-brand-teal transition-colors">Privacy Policy</a></li>
+              <li><a href="/complaints" className="hover:text-brand-teal transition-colors">Complaints Policy</a></li>
+              <li><a href="/cookies" className="hover:text-brand-teal transition-colors">Cookies Policy</a></li>
             </ul>
           </div>
 

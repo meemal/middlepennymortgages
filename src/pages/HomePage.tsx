@@ -8,25 +8,25 @@ const serviceCards = [
     icon: Home,
     title: 'First-Time Buyers',
     summary: 'Taking your first step onto the property ladder? We make the process clear, simple and stress-free from start to finish.',
-    href: '/mortgages.html#first-time-buyers',
+    href: '/mortgages#first-time-buyers',
   },
   {
     icon: Users,
     title: 'Home Movers',
     summary: 'Moving to a new home? We will assess your options and find the right mortgage to suit your next chapter.',
-    href: '/mortgages.html#home-movers',
+    href: '/mortgages#home-movers',
   },
   {
     icon: RefreshCw,
     title: 'Remortgages',
     summary: 'Coming to the end of your current deal? We will search the market and secure a rate that works for you.',
-    href: '/mortgages.html#remortgages',
+    href: '/mortgages#remortgages',
   },
   {
     icon: Building2,
     title: 'Buy-to-Let',
     summary: 'Investing in property? We provide practical, straightforward advice for landlords at every stage.',
-    href: '/mortgages.html#buy-to-let',
+    href: '/mortgages#buy-to-let',
   },
 ];
 
@@ -61,7 +61,7 @@ export default function HomePage() {
               Clear, honest mortgage and protection advice for first-time buyers, home movers and remortgages across the UK.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/contact.html" className="btn-primary text-base px-8 py-4">
+              <a href="/contact" className="btn-primary text-base px-8 py-4">
                 <Phone className="w-5 h-5" />
                 Contact Us
               </a>
@@ -108,7 +108,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <a href="/mortgages.html" className="btn-secondary">
+            <a href="/mortgages" className="btn-secondary">
               View All Mortgage Services
             </a>
           </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
               <p className="text-gray-600 leading-relaxed mb-8">
                 Emma provides straightforward advice on life insurance, critical illness cover, income protection and buildings and contents insurance, ensuring you have the right cover in place without paying for what you do not need.
               </p>
-              <a href="/protection.html" className="btn-primary">
+              <a href="/protection" className="btn-primary">
                 Explore Protection Options
                 <ArrowRight className="w-4 h-4" />
               </a>
@@ -171,7 +171,7 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <a href="/about.html" className="btn-secondary">
+              <a href="/about" className="btn-secondary">
                 About Emma Murphy
                 <ArrowRight className="w-4 h-4" />
               </a>
@@ -199,7 +199,7 @@ export default function HomePage() {
               <p className="text-white/70 text-sm">No hidden charges. Financial services are VAT exempt. Your fee is confirmed before you proceed.</p>
             </div>
             <div className="text-center">
-              <a href="/fees.html" className="inline-flex items-center gap-2 bg-white text-brand-teal px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+              <a href="/fees" className="inline-flex items-center gap-2 bg-white text-brand-teal px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
                 View Full Fee Details
                 <ArrowRight className="w-4 h-4" />
               </a>
@@ -215,7 +215,7 @@ export default function HomePage() {
             Get in touch today for a no-obligation conversation about your mortgage or protection needs. Emma advises clients across the UK via Zoom and Teams.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact.html" className="btn-primary text-base px-8 py-4">
+            <a href="/contact" className="btn-primary text-base px-8 py-4">
               <Phone className="w-5 h-5" />
               Contact Us
             </a>

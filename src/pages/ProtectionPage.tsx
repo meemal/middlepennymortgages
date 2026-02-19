@@ -72,7 +72,7 @@ export default function ProtectionPage() {
                     <div className="flex-1">
                       <h2 className="text-2xl font-bold text-brand-grey mb-4">{service.title}</h2>
                       <p className="text-gray-700 leading-relaxed text-base mb-6">{service.description}</p>
-                      <a href="/contact.html" className="btn-primary text-sm py-2.5 px-5">
+                      <a href="/contact" className="btn-primary text-sm py-2.5 px-5">
                         <Phone className="w-4 h-4" />
                         Discuss Your Options
                       </a>
@@ -93,7 +93,7 @@ export default function ProtectionPage() {
             Emma will take the time to understand your circumstances and recommend the protection that is right for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact.html" className="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+            <a href="/contact" className="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
               <Phone className="w-5 h-5" />
               Get in Touch
             </a>

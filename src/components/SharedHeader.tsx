@@ -5,28 +5,28 @@ import { siteData } from '../data/siteData';
 const navLinks = [
   {
     label: 'Mortgages',
-    href: '/mortgages.html',
+    href: '/mortgages',
     children: [
-      { label: 'First-Time Buyers', href: '/mortgages.html#first-time-buyers' },
-      { label: 'Home Movers', href: '/mortgages.html#home-movers' },
-      { label: 'Remortgages', href: '/mortgages.html#remortgages' },
-      { label: 'Buy-to-Let', href: '/mortgages.html#buy-to-let' },
+      { label: 'First-Time Buyers', href: '/mortgages#first-time-buyers' },
+      { label: 'Home Movers', href: '/mortgages#home-movers' },
+      { label: 'Remortgages', href: '/mortgages#remortgages' },
+      { label: 'Buy-to-Let', href: '/mortgages#buy-to-let' },
     ],
   },
   {
     label: 'Protection',
-    href: '/protection.html',
+    href: '/protection',
     children: [
-      { label: 'Life Insurance', href: '/protection.html#life-insurance' },
-      { label: 'Critical Illness', href: '/protection.html#critical-illness' },
-      { label: 'Income Protection', href: '/protection.html#income-protection' },
-      { label: 'Buildings & Contents', href: '/protection.html#buildings-contents' },
-      { label: 'Landlord Insurance', href: '/protection.html#landlord-insurance' },
+      { label: 'Life Insurance', href: '/protection#life-insurance' },
+      { label: 'Critical Illness', href: '/protection#critical-illness' },
+      { label: 'Income Protection', href: '/protection#income-protection' },
+      { label: 'Buildings & Contents', href: '/protection#buildings-contents' },
+      { label: 'Landlord Insurance', href: '/protection#landlord-insurance' },
     ],
   },
-  { label: 'About Emma', href: '/about.html' },
-  { label: 'Fees', href: '/fees.html' },
-  { label: 'Contact', href: '/contact.html' },
+  { label: 'About Emma', href: '/about' },
+  { label: 'Fees', href: '/fees' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export default function SharedHeader() {
@@ -97,13 +97,13 @@ export default function SharedHeader() {
               <Phone className="w-4 h-4" />
               {siteData.phone}
             </a>
-            <a href="/contact.html" className="btn-primary text-sm py-2.5 px-5">
+            <a href="/contact" className="btn-primary text-sm py-2.5 px-5">
               Get in Touch
             </a>
           </div>
 
           <div className="flex nav:hidden items-center gap-2">
-            <a href="/contact.html" className="btn-primary text-sm py-2 px-4">
+            <a href="/contact" className="btn-primary text-sm py-2 px-4">
               Get in Touch
             </a>
             <button
@@ -153,7 +153,7 @@ export default function SharedHeader() {
                 <Phone className="w-4 h-4 text-brand-teal" />
                 {siteData.phone}
               </a>
-              <a href="/contact.html" className="btn-primary w-full justify-center">
+              <a href="/contact" className="btn-primary w-full justify-center">
                 Get in Touch
               </a>
             </div>

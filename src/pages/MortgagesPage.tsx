@@ -74,7 +74,7 @@ export default function MortgagesPage() {
                     <span className="text-brand-teal">Who this is for:</span> {service.whoFor}
                   </p>
                   <p className="text-gray-600 leading-relaxed text-base mb-8">{service.description}</p>
-                  <a href="/contact.html" className="btn-primary">
+                  <a href="/contact" className="btn-primary">
                     <Phone className="w-4 h-4" />
                     Get in Touch
                     <ArrowRight className="w-4 h-4" />
@@ -112,7 +112,7 @@ export default function MortgagesPage() {
             Emma is happy to discuss your situation and point you in the right direction — with no obligation and no pressure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact.html" className="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+            <a href="/contact" className="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
               <Phone className="w-5 h-5" />
               Contact Us Today
             </a>

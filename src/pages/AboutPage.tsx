@@ -83,7 +83,7 @@ export default function AboutPage() {
                   "{siteData.valueStatement.substring(0, 180)}..."
                 </p>
               </div>
-              <a href="/contact.html" className="btn-primary mt-8">
+              <a href="/contact" className="btn-primary mt-8">
                 <Phone className="w-4 h-4" />
                 Speak to Emma
                 <ArrowRight className="w-4 h-4" />
@@ -136,7 +136,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-4">Ready to Work Together?</h2>
           <p className="text-white/85 text-lg mb-8">Get in touch to arrange a no-obligation conversation about your mortgage or protection needs.</p>
-          <a href="/contact.html" className="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+          <a href="/contact" className="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
             <Phone className="w-5 h-5" />
             Get in Touch
           </a>

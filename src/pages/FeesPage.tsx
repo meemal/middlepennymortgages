@@ -93,7 +93,7 @@ export default function FeesPage() {
             Emma is happy to discuss fees and the service she provides before you commit to anything. There is no pressure and no obligation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact.html" className="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+            <a href="/contact" className="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
               <Phone className="w-5 h-5" />
               Get in Touch
             </a>

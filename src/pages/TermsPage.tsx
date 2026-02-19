@@ -63,12 +63,12 @@ export default function TermsPage() {
                 Tel: {siteData.phone}
               </address>
               <p className="mt-4">If you are not satisfied with our response, you have the right to refer your complaint to the Financial Ombudsman Service (FOS) at <a href="https://www.financial-ombudsman.org.uk" target="_blank" rel="noopener noreferrer" className="text-brand-teal underline">www.financial-ombudsman.org.uk</a> or by telephone on 0800 023 4567.</p>
-              <p className="mt-3">Please also refer to our <a href="/complaints.html" className="text-brand-teal underline">Complaints Policy</a> for full details of our complaints procedure.</p>
+              <p className="mt-3">Please also refer to our <a href="/complaints" className="text-brand-teal underline">Complaints Policy</a> for full details of our complaints procedure.</p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-brand-grey mb-3">7. Data Protection</h2>
-              <p>We collect and use your personal data to provide mortgage and protection advice services. Please read our <a href="/privacy.html" className="text-brand-teal underline">Privacy Policy</a> for full details of how we handle your data.</p>
+              <p>We collect and use your personal data to provide mortgage and protection advice services. Please read our <a href="/privacy" className="text-brand-teal underline">Privacy Policy</a> for full details of how we handle your data.</p>
             </div>
 
             <div>
