@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-brand-grey antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-teal-dark transition-all duration-200 shadow-sm hover:shadow-md;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border-2 border-brand-teal text-brand-teal px-6 py-3 rounded-lg font-semibold hover:bg-brand-teal hover:text-white transition-all duration-200;
+  }
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-brand-grey;
+  }
+  .section-subheading {
+    @apply text-lg text-gray-600 leading-relaxed;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition-shadow duration-200;
+  }
+  .hero-overlay {
+    @apply absolute inset-0 bg-brand-grey/60;
+  }
+}
