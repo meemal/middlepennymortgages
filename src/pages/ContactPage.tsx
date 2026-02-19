@@ -70,7 +70,7 @@ export default function ContactPage() {
       formData.append('_subject', `New Contact Form: ${form.subject}`);
 
       // Replace YOUR_FORM_ID with your actual Formspree form ID
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/mnjbbnel', {
         method: 'POST',
         body: formData,
         headers: {
