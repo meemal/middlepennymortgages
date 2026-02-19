@@ -49,24 +49,45 @@ export default function ContactPage() {
       return;
     }
 
+    // Honeypot spam protection
+    if (form.website) {
+      // Silent fail for bots
+      setSubmitted(true);
+      return;
+    }
+
     setLoading(true);
 
     try {
-      const response = await fetch('/api/contact-submit.php', {
+      // Create FormData object for Formspree
+      const formData = new FormData();
+      formData.append('name', form.name);
+      formData.append('email', form.email);
+      formData.append('phone', form.phone);
+      formData.append('subject', form.subject);
+      formData.append('message', form.message);
+      formData.append('marketingConsent', form.marketingConsent ? 'Yes' : 'No');
+      formData.append('_subject', `New Contact Form: ${form.subject}`);
+
+      // Replace YOUR_FORM_ID with your actual Formspree form ID
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST',
+        body: formData,
         headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(form),
+          'Accept': 'application/json'
+        }
       });
 
-      const result = await response.json();
-
-      if (response.ok && result.success) {
+      if (response.ok) {
         setSubmitted(true);
         setForm(initialForm);
       } else {
-        setError(result.message || 'Sorry, there was an error sending your message. Please try again or contact us directly.');
+        const data = await response.json();
+        if (data.errors) {
+          setError(data.errors.map((error: any) => error.message).join(', '));
+        } else {
+          setError('Sorry, there was an error sending your message. Please try again or contact us directly.');
+        }
       }
     } catch (err) {
       setError('Sorry, there was an error sending your message. Please try again or contact us directly.');

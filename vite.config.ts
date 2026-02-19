@@ -1,28 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
-import { copyFileSync, mkdirSync, existsSync } from 'fs';
 
 export default defineConfig({
   plugins: [
     react(),
-    {
-      name: 'copy-api-files',
-      closeBundle() {
-        const apiDir = resolve(__dirname, 'dist/api');
-        if (!existsSync(apiDir)) {
-          mkdirSync(apiDir, { recursive: true });
-        }
-        copyFileSync(
-          resolve(__dirname, 'api/contact-submit.php'),
-          resolve(__dirname, 'dist/api/contact-submit.php')
-        );
-        copyFileSync(
-          resolve(__dirname, 'api/test-mail.php'),
-          resolve(__dirname, 'dist/api/test-mail.php')
-        );
-      },
-    },
   ],
   optimizeDeps: {
     exclude: ['lucide-react'],
