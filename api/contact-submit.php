@@ -155,7 +155,7 @@ if (!$privacyAccepted) {
 }
 
 // Prepare email to Emma
-$to = 'emma@middlepennymortgagesolutions.co.uk';
+$to = 'naomispirit@gmail.com';
 $emailSubject = 'New Contact Form Submission - ' . $subject;
 
 // Build email body
