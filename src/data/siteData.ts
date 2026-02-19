@@ -4,7 +4,7 @@ export const siteData = {
   domain: 'middlepennymortgagesolutions.co.uk',
   phone: '0141 465 9215',
   mobile: '07468 617786',
-  email: 'info@middlepennymortgagesolutions.co.uk',
+  email: 'emma@middlepennymortgagesolutions.co.uk',
   whatsapp: '447468617786',
   address: {
     line1: 'Middlepenny Mortgage Solutions',
