@@ -11,6 +11,7 @@ interface FormState {
   message: string;
   privacyAccepted: boolean;
   marketingConsent: boolean;
+  website: string; // Honeypot field
 }
 
 const initialForm: FormState = {
@@ -21,12 +22,14 @@ const initialForm: FormState = {
   message: '',
   privacyAccepted: false,
   marketingConsent: false,
+  website: '',
 };
 
 export default function ContactPage() {
   const [form, setForm] = useState<FormState>(initialForm);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
@@ -37,14 +40,40 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+
     if (!form.privacyAccepted) {
       setError('Please confirm you have read and understood the Privacy Policy before submitting.');
       return;
     }
-    setSubmitted(true);
+
+    setLoading(true);
+
+    try {
+      const response = await fetch('/api/contact-submit.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitted(true);
+        setForm(initialForm);
+      } else {
+        setError(result.message || 'Sorry, there was an error sending your message. Please try again or contact us directly.');
+      }
+    } catch (err) {
+      setError('Sorry, there was an error sending your message. Please try again or contact us directly.');
+      console.error('Form submission error:', err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -78,6 +107,17 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                  {/* Honeypot field - hidden from users but visible to bots */}
+                  <input
+                    type="text"
+                    name="website"
+                    value={form.website}
+                    onChange={handleChange}
+                    autoComplete="off"
+                    tabIndex={-1}
+                    style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px' }}
+                    aria-hidden="true"
+                  />
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-brand-grey mb-1.5">
@@ -207,9 +247,25 @@ export default function ContactPage() {
                     </div>
                   )}
 
-                  <button type="submit" className="btn-primary w-full justify-center text-base py-4">
-                    <Send className="w-4 h-4" />
-                    Send Message
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="btn-primary w-full justify-center text-base py-4 disabled:opacity-60 disabled:cursor-not-allowed"
+                  >
+                    {loading ? (
+                      <>
+                        <svg className="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4" />
+                        Send Message
+                      </>
+                    )}
                   </button>
                 </form>
               )}
