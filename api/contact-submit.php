@@ -176,6 +176,32 @@ $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
+// Save submission to local JSON file for backup
+$submissionsFile = __DIR__ . '/submissions.json';
+$submission = [
+    'timestamp' => date('Y-m-d H:i:s'),
+    'name' => $name,
+    'email' => $email,
+    'phone' => $phone,
+    'subject' => $subject,
+    'message' => $message,
+    'marketingConsent' => $marketingConsent,
+    'ip' => $_SERVER['REMOTE_ADDR'] ?? 'unknown'
+];
+
+// Read existing submissions
+$submissions = [];
+if (file_exists($submissionsFile)) {
+    $content = file_get_contents($submissionsFile);
+    $submissions = json_decode($content, true) ?: [];
+}
+
+// Add new submission
+$submissions[] = $submission;
+
+// Save back to file
+file_put_contents($submissionsFile, json_encode($submissions, JSON_PRETTY_PRINT));
+
 // Send email to Emma
 $emailSent = mail($to, $emailSubject, $emailBody, $headers);
 

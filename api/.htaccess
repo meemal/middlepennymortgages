@@ -1,0 +1,10 @@
+# Deny access to submissions.json and log files
+<Files "submissions.json">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order Allow,Deny
+    Deny from all
+</Files>
