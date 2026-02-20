@@ -367,29 +367,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div>
-                <h3 className="font-semibold text-brand-grey mb-4">Follow Emma</h3>
-                <div className="flex items-center gap-3">
-                  <a
-                    href={siteData.social.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-gray-200 text-sm font-medium text-brand-grey hover:border-brand-teal hover:text-brand-teal transition-colors"
-                  >
-                    <Facebook className="w-4 h-4" />
-                    Facebook
-                  </a>
-                  <a
-                    href={siteData.social.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-gray-200 text-sm font-medium text-brand-grey hover:border-brand-teal hover:text-brand-teal transition-colors"
-                  >
-                    <Linkedin className="w-4 h-4" />
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
+         
 
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
                 <h3 className="font-semibold text-amber-800 mb-2 text-sm">Remote Advice Available</h3>
