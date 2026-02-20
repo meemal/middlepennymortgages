@@ -18,26 +18,7 @@ export default function SharedFooter() {
             <p className="text-slate-400 text-sm leading-relaxed mt-4">
               Clear, honest mortgage and protection advice across the UK. Personal service from a qualified adviser you can trust.
             </p>
-            <div className="flex items-center gap-3 mt-5">
-              <a
-                href={siteData.social.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-slate-700 flex items-center justify-center hover:bg-brand-teal transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a
-                href={siteData.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-slate-700 flex items-center justify-center hover:bg-brand-teal transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-            </div>
+          
           </div>
 
           <div>
