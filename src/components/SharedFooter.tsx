@@ -74,13 +74,13 @@ export default function SharedFooter() {
         </div>
 
         <div className="border-t border-slate-700 mt-12 pt-8 space-y-4">
-          <p className="text-slate-400 text-xs leading-relaxed">
+          <p className="text-slate-400 text-s leading-relaxed">
             {siteData.regulatoryDisclosure}
           </p>
-          <p className="text-slate-400 text-xs leading-relaxed">
+          <p className="text-slate-400 text-s leading-relaxed">
             {siteData.jurisdictionDisclosure}
           </p>
-          <p className="text-slate-400 text-xs">
+          <p className="text-slate-400 text-s">
             There may be a fee for mortgage advice. The exact amount will depend on your circumstances and will be confirmed before you proceed. Our standard mortgage advice fee is {siteData.fee}. Financial services are VAT exempt.
           </p>
         </div>
