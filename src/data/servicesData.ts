@@ -20,7 +20,7 @@ export const mortgageServices = [
     title: 'Remortgages',
     icon: 'RefreshCw',
     summary: 'Your current deal coming to an end? We will review your options and help you secure a better rate.',
-    description: 'When your fixed or tracker rate ends, you could be moved onto your lender\'s standard variable rate, often significantly higher. Emma will review the whole of the market, compare rates, and advise whether staying with your current lender or switching makes better financial sense for you.',
+    description: 'When your fixed or tracker rate ends, you could be moved onto your lender\'s standard variable rate, often significantly higher. Emma will review the market, compare rates, and advise whether staying with your current lender or switching makes better financial sense for you.',
     whoFor: 'Homeowners approaching the end of their current mortgage deal.',
   },
   {
