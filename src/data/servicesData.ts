@@ -50,7 +50,7 @@ export const protectionServices = [
     id: 'income-protection',
     title: 'Income Protection',
     icon: 'Banknote',
-    description: 'Income protection provides a regular monthly income if you are unable to work due to illness or injury. Unlike statutory sick pay, which is limited, an income protection policy can replace 60-70% proportion of your salary and continue paying until you return to work or reach retirement age.',
+    description: 'Income protection provides a regular monthly income if you are unable to work due to illness or injury. Unlike statutory sick pay, which is limited, an income protection policy can replace 60-70% of your salary and continue paying until you return to work or reach retirement age.',
   },
   {
     id: 'buildings-contents',
