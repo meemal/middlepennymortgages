@@ -34,10 +34,9 @@ const serviceCards = [
 const trustPoints = [
   'Qualified CMAP mortgage adviser',
   'Advising clients since 2017',
-  'Whole of market access',
   'Nationwide remote advice via Zoom & Teams',
   'Transparent fixed fee of £395',
-  'FCA regulated through HL Partnership Limited',
+  'Authorised via HL Partnership Limited',
 ];
 
 export default function HomePage() {
