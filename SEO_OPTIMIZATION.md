@@ -62,7 +62,7 @@ Your Middlepenny Mortgage Solutions website has been fully optimized for both tr
 #### About Page
 - Title: "About Emma Murphy | CMAP Qualified Mortgage Adviser Scotland"
 - Person schema with professional credentials
-- Keywords: Emma Murphy, CMAP qualified, FCA regulated, mortgage adviser background
+- Keywords: Emma Murphy, CMAP qualified, Authosed via HL Parnetrship, mortgage adviser background
 
 #### Mortgages Page
 - Title: "Mortgage Services | First-Time Buyers, Remortgages & Buy-to-Let"
