@@ -15,7 +15,7 @@ export default function SharedFooter() {
                 className="h-12 w-auto mb-4 brightness-0 invert"
               />
             </a>
-            <p className="text-slate-400 text-sm leading-relaxed mt-4">
+            <p className="text-slate-400 text-md leading-relaxed mt-4">
               Clear, honest mortgage and protection advice across the UK. Personal service from a qualified adviser you can trust.
             </p>
           
@@ -23,7 +23,7 @@ export default function SharedFooter() {
 
           <div>
             <h3 className="text-white font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-md">
               <li><a href="/mortgages#first-time-buyers" className="hover:text-brand-teal transition-colors">First-Time Buyers</a></li>
               <li><a href="/mortgages#home-movers" className="hover:text-brand-teal transition-colors">Home Movers</a></li>
               <li><a href="/mortgages#remortgages" className="hover:text-brand-teal transition-colors">Remortgages</a></li>
@@ -34,7 +34,7 @@ export default function SharedFooter() {
 
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-md">
               <li><a href="/about" className="hover:text-brand-teal transition-colors">About Emma</a></li>
               <li><a href="/fees" className="hover:text-brand-teal transition-colors">Fees</a></li>
               <li><a href="/contact" className="hover:text-brand-teal transition-colors">Contact</a></li>
@@ -47,7 +47,7 @@ export default function SharedFooter() {
 
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-md">
               <li>
                 <a href={`tel:${siteData.phone.replace(/\s/g, '')}`} className="flex items-start gap-2 hover:text-brand-teal transition-colors">
                   <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
