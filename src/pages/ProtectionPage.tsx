@@ -33,7 +33,7 @@ export default function ProtectionPage() {
   useEffect(() => {
     updatePageMeta({
       title: 'Protection Insurance | Life, Critical Illness & Income Protection | Scotland & UK',
-      description: 'Expert protection insurance advice including life insurance, critical illness cover, income protection, and buildings & contents insurance. Safeguard your home, income, and family with FCA regulated advice.',
+      description: 'Expert protection insurance advice including life insurance, critical illness cover, income protection, and buildings & contents insurance. Safeguard your home, income, and family with HL partnership authorised advice.',
       keywords: 'life insurance, critical illness cover, income protection, protection insurance, buildings and contents insurance, family protection, mortgage protection insurance',
       canonicalUrl: `${defaultSEO.domain}/protection`,
       schema: {

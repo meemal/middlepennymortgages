@@ -44,7 +44,7 @@ export default function HomePage() {
     updatePageMeta({
       title: 'Middlepenny Mortgage Solutions | Expert Mortgage Adviser Scotland & UK',
       description: 'Clear, honest mortgage and protection advice from Emma Murphy, a CMAP qualified mortgage adviser. Helping first-time buyers, home movers, remortgages and buy-to-let across the UK since 2017.',
-      keywords: 'mortgage adviser UK, mortgage broker Scotland, first-time buyer mortgage advice, remortgage adviser, buy-to-let mortgage, protection insurance, mortgage advice Scotland, FCA regulated mortgage adviser',
+      keywords: 'mortgage adviser UK, mortgage broker Scotland, first-time buyer mortgage advice, remortgage adviser, buy-to-let mortgage, protection insurance, mortgage advice Scotland, HL partnership authorised mortgage adviser',
       canonicalUrl: `${defaultSEO.domain}/`,
       schema: {
         '@context': 'https://schema.org',
@@ -60,7 +60,7 @@ export default function HomePage() {
               answer: 'Our standard mortgage advice fee is £395, with transparent pricing and no hidden charges. Financial services are VAT exempt, and your fee is confirmed before you proceed.',
             },
             {
-              question: 'Is Emma Murphy FCA regulated?',
+              question: 'Is Emma Murphy HL partnership authorised?',
               answer: 'Yes, Emma Murphy is an appointed representative of HL Partnership Limited, which is authorised and regulated by the Financial Conduct Authority (FCA).',
             },
             {

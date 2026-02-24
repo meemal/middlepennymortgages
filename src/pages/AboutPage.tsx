@@ -8,7 +8,7 @@ const credentials = [
   { icon: Award, label: 'CMAP Qualified', detail: 'Certificate in Mortgage Advice and Practice' },
   { icon: Clock, label: 'Advising Since 2017', detail: 'Nearly a decade in financial services' },
   { icon: Monitor, label: 'Nationwide Remote Advice', detail: 'Serving clients across the UK via Zoom and Teams' },
-  { icon: CheckCircle, label: 'FCA Regulated', detail: 'Appointed representative of HL Partnership Limited' },
+  { icon: CheckCircle, label: 'HL Partnership Authorised', detail: 'Appointed representative of HL Partnership Limited' },
 ];
 
 const timeline = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
     updatePageMeta({
       title: 'About Emma Murphy | CMAP Qualified Mortgage Adviser Scotland',
       description: 'Meet Emma Murphy, a CMAP qualified mortgage adviser with nearly a decade of experience helping clients across the UK with mortgage and protection advice since 2017.',
-      keywords: 'Emma Murphy mortgage adviser, CMAP qualified, FCA regulated mortgage adviser Scotland, mortgage broker background, experienced mortgage adviser UK',
+      keywords: 'Emma Murphy mortgage adviser, CMAP qualified, HL partnership authorised mortgage adviser Scotland, mortgage broker background, experienced mortgage adviser UK',
       canonicalUrl: `${defaultSEO.domain}/about`,
       schema: {
         '@context': 'https://schema.org',
