@@ -55,12 +55,17 @@ export default function TermsPage() {
               <h2 className="text-xl font-bold text-brand-grey mb-3">6. Complaints</h2>
               <p>If you are unhappy with any aspect of our service, please contact us in the first instance:</p>
               <address className="not-italic mt-3 bg-gray-50 p-4 rounded-lg">
-                <strong>Middlepenny Mortgage Solutions</strong><br />
-                {siteData.address.line2}<br />
-                {siteData.address.line3}<br />
-                {siteData.address.line4}<br />
-                Email: <a href={`mailto:${siteData.email}`} className="text-brand-teal underline">{siteData.email}</a><br />
-                Tel: {siteData.phone}
+                <strong>HLP Limited</strong><br />
+               HLP UK Ltd Suite 7<br />
+Commerce House<br />
+Ridings Park<br />
+Cannock<br />
+Staffordshire<br />
+WS11 7FJ<br />
+                Email: <a href={`mailto:
+enquiries@hlpltd.net`} className="text-brand-teal underline">
+enquiries@hlpltd.net</a><br />
+                Tel: 01543 275 101 
               </address>
               <p className="mt-4">If you are not satisfied with our response, you have the right to refer your complaint to the Financial Ombudsman Service (FOS) at <a href="https://www.financial-ombudsman.org.uk" target="_blank" rel="noopener noreferrer" className="text-brand-teal underline">www.financial-ombudsman.org.uk</a> or by telephone on 0800 023 4567.</p>
               <p className="mt-3">Please also refer to our <a href="/complaints" className="text-brand-teal underline">Complaints Policy</a> for full details of our complaints procedure.</p>
