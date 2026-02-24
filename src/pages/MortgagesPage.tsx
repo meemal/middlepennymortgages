@@ -49,9 +49,18 @@ export default function MortgagesPage() {
         <div className="absolute inset-0 bg-brand-grey/65" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Mortgages</h1>
-          <p className="text-xl text-white/85 max-w-2xl mx-auto">
+          <p className="text-xl text-white/85 max-w-2xl mx-auto mb-6">
             Clear, tailored mortgage advice for every stage of your property journey. No jargon — just honest guidance from a qualified adviser.
           </p>
+          <div className="max-w-3xl mx-auto mt-6 bg-amber-50/95 backdrop-blur-sm border border-amber-200 rounded-lg p-4">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              <div className="space-y-1 text-sm text-amber-900 text-left">
+                <p>Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
+                <p>Most Buy-to-Let mortgages are not regulated by the Financial Conduct Authority.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -112,18 +121,6 @@ export default function MortgagesPage() {
           </section>
         );
       })}
-
-      <section className="py-10 bg-amber-50 border-y border-amber-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-start gap-3">
-            <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-            <div className="space-y-1 text-sm text-amber-900">
-              <p>Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
-              <p>Most Buy-to-Let mortgages are not regulated by the Financial Conduct Authority.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="py-16 bg-brand-teal">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
