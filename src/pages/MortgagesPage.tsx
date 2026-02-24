@@ -24,7 +24,7 @@ export default function MortgagesPage() {
     updatePageMeta({
       title: 'Mortgage Services | First-Time Buyers, Remortgages & Buy-to-Let | Scotland & UK',
       description: 'Expert mortgage advice for first-time buyers, home movers, remortgages and buy-to-let properties. Transparent £395 fee. Authorised via HL partnership and serving clients across the UK.',
-      keywords: 'first-time buyer mortgage, remortgage advice, buy-to-let mortgage, home mover mortgage, mortgage broker Scotland, whole of market mortgage adviser, FCA regulated mortgage advice',
+      keywords: 'first-time buyer mortgage, remortgage advice, buy-to-let mortgage, home mover mortgage, mortgage broker Scotland, mortgage adviser, FCA regulated mortgage advice',
       canonicalUrl: `${defaultSEO.domain}/mortgages`,
       schema: {
         '@context': 'https://schema.org',
