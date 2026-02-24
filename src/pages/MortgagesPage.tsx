@@ -52,10 +52,10 @@ export default function MortgagesPage() {
           <p className="text-xl text-white/85 max-w-2xl mx-auto mb-6">
             Clear, tailored mortgage advice for every stage of your property journey. No jargon — just honest guidance from a qualified adviser.
           </p>
-          <div className="max-w-3xl mx-auto mt-6 bg-amber-50/95 backdrop-blur-sm border border-amber-200 rounded-lg p-4">
+          <div className="max-w-3xl mx-auto mt-6 bg-amber-50/80 backdrop-blur-sm border border-amber-200/70 rounded-lg p-4">
             <div className="flex items-start gap-3">
               <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-              <div className="space-y-1 text-sm text-amber-900 text-left">
+              <div className="space-y-1 text-sm text-gray-700 text-left">
                 <p>Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
                 <p>Most Buy-to-Let mortgages are not regulated by the Financial Conduct Authority.</p>
               </div>
