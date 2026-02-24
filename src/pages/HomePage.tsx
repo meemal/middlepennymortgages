@@ -88,10 +88,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-brand-grey/60" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-brand-teal/90 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
-              <Star className="w-4 h-4" />
-              FCA Regulated Mortgage Adviser
-            </div>
+           
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Straightforward Mortgage Advice, Tailored to You
             </h1>
