@@ -103,7 +103,7 @@ export default function SharedHeader() {
           </div>
 
           <div className="flex nav:hidden items-center gap-2">
-            <a href="/contact" className="btn-primary text-sm py-2 px-4">
+            <a href="/contact" className="hidden sm:flex btn-primary text-sm py-2 px-4">
               Get in Touch
             </a>
             <button
