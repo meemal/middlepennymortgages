@@ -5,7 +5,7 @@ import { siteData } from '../data/siteData';
 import { updatePageMeta, generatePersonSchema, generateBreadcrumbSchema, defaultSEO } from '../utils/seoHelpers';
 
 const credentials = [
-  { icon: Award, label: 'CMAP Qualified', detail: 'Certificate in Mortgage Advice and Practice' },
+  { icon: Award, label: 'CeMAP Qualified', detail: 'Certificate in Mortgage Advice and Practice' },
   { icon: Clock, label: 'Advising Since 2017', detail: 'Nearly a decade in financial services' },
   { icon: Monitor, label: 'Nationwide Remote Advice', detail: 'Serving clients across the UK via Zoom and Teams' },
   { icon: CheckCircle, label: 'HL Partnership Authorised', detail: 'Appointed representative of HL Partnership Limited' },
@@ -20,7 +20,7 @@ const timeline = [
   {
     year: '2017',
     title: 'Qualified Mortgage Adviser',
-    description: 'After completing her CMAP qualification, Emma began advising clients on mortgages and protection combining her property knowledge with financial expertise.',
+    description: 'After completing her CeMAP qualification, Emma began advising clients on mortgages and protection combining her property knowledge with financial expertise.',
   },
   {
     year: 'Today',
@@ -32,9 +32,9 @@ const timeline = [
 export default function AboutPage() {
   useEffect(() => {
     updatePageMeta({
-      title: 'About Emma Murphy | CMAP Qualified Mortgage Adviser Scotland',
-      description: 'Meet Emma Murphy, a CMAP qualified mortgage adviser with nearly a decade of experience helping clients across the UK with mortgage and protection advice since 2017.',
-      keywords: 'Emma Murphy mortgage adviser, CMAP qualified, HL partnership authorised mortgage adviser Scotland, mortgage broker background, experienced mortgage adviser UK',
+      title: 'About Emma Murphy | CeMAP Qualified Mortgage Adviser Scotland',
+      description: 'Meet Emma Murphy, a CeMAP qualified mortgage adviser with nearly a decade of experience helping clients across the UK with mortgage and protection advice since 2017.',
+      keywords: 'Emma Murphy mortgage adviser, CeMAP qualified, HL partnership authorised mortgage adviser Scotland, mortgage broker background, experienced mortgage adviser UK',
       canonicalUrl: `${defaultSEO.domain}/about`,
       schema: {
         '@context': 'https://schema.org',
@@ -86,7 +86,7 @@ export default function AboutPage() {
             <div>
               <div className="inline-flex items-center gap-2 text-brand-teal text-sm font-medium mb-5">
                 <Award className="w-4 h-4" />
-                CMAP Qualified Adviser
+                CeMAP Qualified Adviser
               </div>
               <h2 className="text-3xl font-bold text-brand-grey mb-6">A Personal Approach to Mortgage Advice</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">

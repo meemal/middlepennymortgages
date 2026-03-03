@@ -134,7 +134,7 @@ export function generateLocalBusinessSchema() {
       '@type': 'Person',
       name: 'Emma Murphy',
       jobTitle: 'Mortgage Adviser',
-      description: 'CMAP qualified mortgage adviser with nearly a decade of experience in financial services.',
+      description: 'CeMAP qualified mortgage adviser with nearly a decade of experience in financial services.',
       sameAs: [
         'https://www.linkedin.com/in/emma-murphy-mortgage-adviser/',
         'https://www.facebook.com/middlepennymortgages/',
@@ -196,7 +196,7 @@ export function generatePersonSchema() {
     '@id': `${defaultSEO.domain}/#person`,
     name: 'Emma Murphy',
     jobTitle: 'Mortgage Adviser',
-    description: 'CMAP qualified mortgage adviser providing expert mortgage and protection advice across the UK since 2017.',
+    description: 'CeMAP qualified mortgage adviser providing expert mortgage and protection advice across the UK since 2017.',
     url: `${defaultSEO.domain}/about`,
     image: `${defaultSEO.domain}/Emma_Murphy.JPG`,
     email: 'emma@middlepennymortgagesolutions.co.uk',

@@ -32,7 +32,7 @@ const serviceCards = [
 ];
 
 const trustPoints = [
-  'Qualified CMAP mortgage adviser',
+  'Qualified CeMAP mortgage adviser',
   'Advising clients since 2017',
   'Nationwide remote advice via Zoom & Teams',
   'Transparent fixed fee of £395',
@@ -43,7 +43,7 @@ export default function HomePage() {
   useEffect(() => {
     updatePageMeta({
       title: 'Middlepenny | Expert Mortgage Adviser Scotland & UK',
-      description: 'Clear, honest mortgage and protection advice from Emma Murphy, a CMAP qualified mortgage adviser. Helping first-time buyers, home movers, remortgages and buy-to-let across the UK since 2017.',
+      description: 'Clear, honest mortgage and protection advice from Emma Murphy, a CeMAP qualified mortgage adviser. Helping first-time buyers, home movers, remortgages and buy-to-let across the UK since 2017.',
       keywords: 'mortgage adviser UK, mortgage broker Scotland, first-time buyer mortgage advice, remortgage adviser, buy-to-let mortgage, protection insurance, mortgage advice Scotland, HL partnership authorised mortgage adviser',
       canonicalUrl: `${defaultSEO.domain}/`,
       schema: {
@@ -69,7 +69,7 @@ export default function HomePage() {
             },
             {
               question: 'What qualifications does Emma Murphy have?',
-              answer: 'Emma Murphy is CMAP qualified (Certificate in Mortgage Advice and Practice) and has been advising clients since 2017, with nearly a decade of experience in financial services.',
+              answer: 'Emma Murphy is CeMAP qualified (Certificate in Mortgage Advice and Practice) and has been advising clients since 2017, with nearly a decade of experience in financial services.',
             },
           ]),
         ],
@@ -216,7 +216,7 @@ export default function HomePage() {
             <div className="relative">
               <img
                 src="/Emma_Murphy.JPG"
-                alt="Emma Murphy, CMAP qualified mortgage adviser providing expert mortgage and protection advice across Scotland and the UK"
+                alt="Emma Murphy, CeMAP qualified mortgage adviser providing expert mortgage and protection advice across Scotland and the UK"
                 className="rounded-2xl shadow-lg w-full object-cover object-top h-[500px]"
                 loading="lazy"
                 width="600"
