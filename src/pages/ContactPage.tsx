@@ -29,7 +29,7 @@ const initialForm: FormState = {
 export default function ContactPage() {
   useEffect(() => {
     updatePageMeta({
-      title: 'Contact Us | Get Expert Mortgage Advice | Middlepenny Mortgage Solutions',
+      title: 'Contact Us | Get Expert Mortgage Advice | Middlepenny',
       description: 'Get in touch with Emma Murphy for expert mortgage and protection advice. Call 0141 465 9215, email, or book a free consultation. Serving clients across the UK via Zoom and Teams.',
       keywords: 'contact mortgage adviser, book mortgage consultation, mortgage advice Scotland, mortgage broker contact, free mortgage consultation',
       canonicalUrl: `${defaultSEO.domain}/contact`,
@@ -264,7 +264,7 @@ export default function ContactPage() {
                         className="mt-0.5 w-4 h-4 accent-brand-teal flex-shrink-0"
                       />
                       <label htmlFor="marketingConsent" className="text-sm text-gray-700 leading-relaxed">
-                        I would like to receive occasional updates and information about mortgage and protection products from Middlepenny Mortgage Solutions. You may withdraw your consent at any time.
+                        I would like to receive occasional updates and information about mortgage and protection products from Middlepenny. You may withdraw your consent at any time.
                       </label>
                     </div>
                   </div>

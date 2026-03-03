@@ -37,7 +37,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="text-xl font-bold text-brand-grey mb-3">Who will process my data?</h2>
               <p>
-                Middlepenny Mortgage Solutions is an appointed representative of HL Partnership Limited which is authorised and regulated by the Financial Conduct Authority. As such, both Middlepenny Mortgage Solutions and HL Partnership Limited will process your data in order to provide our services.
+                Middlepenny is an appointed representative of HL Partnership Limited which is authorised and regulated by the Financial Conduct Authority. As such, both Middlepenny and HL Partnership Limited will process your data in order to provide our services.
               </p>
             </div>
 
@@ -124,7 +124,7 @@ export default function PrivacyPage() {
                   <thead>
                     <tr className="bg-gray-50 border-b border-gray-200">
                       <th className="text-left px-5 py-3 font-semibold text-brand-grey w-1/3"></th>
-                      <th className="text-left px-5 py-3 font-semibold text-brand-grey">Middlepenny Mortgage Solutions</th>
+                      <th className="text-left px-5 py-3 font-semibold text-brand-grey">Middlepenny</th>
                       <th className="text-left px-5 py-3 font-semibold text-brand-grey">HL Partnership Limited</th>
                     </tr>
                   </thead>

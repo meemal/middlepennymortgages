@@ -25,7 +25,7 @@ export default function TermsPage() {
           <div className="space-y-10 text-gray-700 leading-relaxed">
             <div>
               <h2 className="text-xl font-bold text-brand-grey mb-3">1. About Us</h2>
-              <p>Middlepenny Mortgage Solutions is a trading name of Emma Murphy. Emma Murphy is an appointed representative of HL Partnership Limited which is authorised and regulated by the Financial Conduct Authority. HL Partnership Limited's FCA Register number is 303397. You can verify this at <a href="https://www.fca.org.uk/register" target="_blank" rel="noopener noreferrer" className="text-brand-teal underline">www.fca.org.uk/register</a>.</p>
+              <p>Middlepenny is a trading name of Emma Murphy. Emma Murphy is an appointed representative of HL Partnership Limited which is authorised and regulated by the Financial Conduct Authority. HL Partnership Limited's FCA Register number is 303397. You can verify this at <a href="https://www.fca.org.uk/register" target="_blank" rel="noopener noreferrer" className="text-brand-teal underline">www.fca.org.uk/register</a>.</p>
             </div>
 
             <div>

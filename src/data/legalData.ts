@@ -1,6 +1,6 @@
 export const legalData = {
   termsContent: `
-These Terms of Business set out the basis on which Middlepenny Mortgage Solutions will provide mortgage and protection advice services to you.
+These Terms of Business set out the basis on which Middlepenny will provide mortgage and protection advice services to you.
 
 **Regulatory Status**
 

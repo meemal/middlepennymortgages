@@ -11,14 +11,14 @@ export default function SharedFooter() {
             <a href="/">
               <img
                 src="/Middlepenny_Logo.png"
-                alt="Middlepenny Mortgage Solutions"
+                alt="Middlepenny"
                 className="h-12 w-auto mb-4 brightness-0 invert"
               />
             </a>
             <p className="text-slate-400 text-md leading-relaxed mt-4">
               Clear, honest mortgage and protection advice across the UK. Personal service from a qualified adviser you can trust.
             </p>
-          
+
           </div>
 
           <div>
@@ -87,7 +87,7 @@ export default function SharedFooter() {
 
         <div className="border-t border-slate-700 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-xs">
-            &copy; {new Date().getFullYear()} Middlepenny Mortgage Solutions. All rights reserved.
+            &copy; {new Date().getFullYear()} Middlepenny. All rights reserved.
           </p>
           <div className="flex items-center space-x-3 bg-slate-700/50 px-6 py-3 rounded-lg border border-slate-600/50 hover:bg-slate-700 transition-all">
             <span className="text-slate-400 text-sm">Website by</span>

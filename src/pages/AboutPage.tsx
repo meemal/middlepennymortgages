@@ -24,7 +24,7 @@ const timeline = [
   },
   {
     year: 'Today',
-    title: 'Middlepenny Mortgage Solutions',
+    title: 'Middlepenny',
     description: 'Now running her own advisory practice, Emma helps clients across the UK with mortgage and protection advice through a personal, relationship-led approach.',
   },
 ];

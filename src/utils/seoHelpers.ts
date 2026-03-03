@@ -9,7 +9,7 @@ export interface SEOData {
 }
 
 export const defaultSEO = {
-  siteName: 'Middlepenny Mortgage Solutions',
+  siteName: 'Middlepenny',
   domain: 'https://www.middlepennymortgagesolutions.co.uk',
   ogImage: '/Emma_Murphy_Middle_Penny_Social.jpg',
   twitterHandle: '@MiddlepennyMS',
@@ -106,7 +106,7 @@ export function generateLocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
     '@id': `${defaultSEO.domain}/#organization`,
-    name: 'Middlepenny Mortgage Solutions',
+    name: 'Middlepenny',
     description: 'Professional mortgage and protection advice for first-time buyers, home movers, remortgages and buy-to-let across the UK.',
     url: defaultSEO.domain,
     logo: `${defaultSEO.domain}/Middlepenny_Logo.png`,

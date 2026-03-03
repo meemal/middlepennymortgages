@@ -42,7 +42,7 @@ const trustPoints = [
 export default function HomePage() {
   useEffect(() => {
     updatePageMeta({
-      title: 'Middlepenny Mortgage Solutions | Expert Mortgage Adviser Scotland & UK',
+      title: 'Middlepenny | Expert Mortgage Adviser Scotland & UK',
       description: 'Clear, honest mortgage and protection advice from Emma Murphy, a CMAP qualified mortgage adviser. Helping first-time buyers, home movers, remortgages and buy-to-let across the UK since 2017.',
       keywords: 'mortgage adviser UK, mortgage broker Scotland, first-time buyer mortgage advice, remortgage adviser, buy-to-let mortgage, protection insurance, mortgage advice Scotland, HL partnership authorised mortgage adviser',
       canonicalUrl: `${defaultSEO.domain}/`,
@@ -52,7 +52,7 @@ export default function HomePage() {
           generateLocalBusinessSchema(),
           generateFAQSchema([
             {
-              question: 'What mortgage services does Middlepenny Mortgage Solutions offer?',
+              question: 'What mortgage services does Middlepenny offer?',
               answer: 'We provide expert mortgage advice for first-time buyers, home movers, remortgages, and buy-to-let properties across the UK. We also offer protection insurance advice including life insurance, critical illness cover, and income protection.',
             },
             {

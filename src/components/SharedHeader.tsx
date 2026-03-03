@@ -51,7 +51,7 @@ export default function SharedHeader() {
           <a href="/" className="flex items-center flex-shrink-0">
             <img
               src="/Middlepenny_Logo.png"
-              alt="Middlepenny Mortgage Solutions"
+              alt="Middlepenny"
               className="h-12 w-auto"
             />
           </a>
