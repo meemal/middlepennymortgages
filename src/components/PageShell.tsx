@@ -2,6 +2,7 @@ import React from 'react';
 import SharedHeader from './SharedHeader';
 import SharedFooter from './SharedFooter';
 import WhatsAppButton from './WhatsAppButton';
+import CookieBanner from './CookieBanner';
 
 interface PageShellProps {
   children: React.ReactNode;
@@ -16,6 +17,7 @@ export default function PageShell({ children }: PageShellProps) {
       </main>
       <SharedFooter />
       <WhatsAppButton />
+      <CookieBanner />
     </div>
   );
 }
