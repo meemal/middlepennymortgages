@@ -1,8 +1,12 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Settings } from 'lucide-react';
 import { siteData } from '../data/siteData';
 
-export default function SharedFooter() {
+interface SharedFooterProps {
+  onCookieSettings?: () => void;
+}
+
+export default function SharedFooter({ onCookieSettings }: SharedFooterProps) {
   return (
     <footer className="bg-slate-800 text-slate-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -42,6 +46,15 @@ export default function SharedFooter() {
               <li><a href="/privacy" className="hover:text-brand-teal transition-colors">Privacy Policy</a></li>
               <li><a href="/complaints" className="hover:text-brand-teal transition-colors">Complaints Policy</a></li>
               <li><a href="/cookies" className="hover:text-brand-teal transition-colors">Cookies Policy</a></li>
+              <li>
+                <button
+                  onClick={onCookieSettings}
+                  className="inline-flex items-center gap-1.5 hover:text-brand-teal transition-colors text-left"
+                >
+                  <Settings className="w-3.5 h-3.5" aria-hidden="true" />
+                  Cookie Settings
+                </button>
+              </li>
             </ul>
           </div>
 
