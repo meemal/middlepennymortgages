@@ -36,7 +36,7 @@ export default function TermsPage() {
 
             <div>
               <h2 className="text-xl font-bold text-brand-grey mb-3">3. Our Fees</h2>
-              <p>There may be a fee for mortgage advice. The exact amount will depend on your circumstances and will be confirmed before you proceed. Our standard mortgage advice fee is <strong>{siteData.fee}</strong>, payable on application.</p>
+              <p>There may be a fee for mortgage advice. The exact amount will depend on your circumstances and will be confirmed before you proceed. Our standard mortgage advice fee is <strong>{siteData.fee}</strong>, payable once the mortgage offer has been issued.</p>
               <p className="mt-3">Financial services are VAT exempt. The broker fee will be clearly documented in your Key Facts Illustration before you commit to any product or service.</p>
               <p className="mt-3">Advice on protection products is provided without charge to you. We receive commission from product providers in relation to protection recommendations, which will always be disclosed clearly.</p>
             </div>
