@@ -17,7 +17,7 @@ export const siteData = {
     facebook: 'https://www.facebook.com/middlepennymortgages/',
   },
   fee: '£395',
-  valueStatement: `At Middlepenny, we place our clients at the heart of everything we do. Our business is built on trust, integrity and lasting relationships, with a commitment to delivering clear, reliable guidance at every stage of the journey. We believe in removing complexity, providing reassurance, and ensuring our clients feel fully supported in their decisions. By combining professionalism with a personal approach, our aim is to become a trusted partner you can return to time and again, confident that your best interests are always our priority.`,
+  valueStatement: `Whether you're buying your first home, moving, remortgaging or reviewing your protection needs, my goal is to guide you through the process with confidence, clarity and support every step of the way.`,
   regulatoryDisclosure: `Middlepenny is a trading name of Emma Murphy who is an appointed representative of HL Partnership Limited which is authorised and regulated by the Financial Conduct Authority.`,
   jurisdictionDisclosure: `The guidance and/or information contained within this website is subject to the UK regulatory regime and is therefore targeted at consumers based in the UK.`,
 };
