@@ -3,6 +3,7 @@ import { Award, Clock, Monitor, CheckCircle, ArrowRight, Phone } from 'lucide-re
 import PageShell from '../components/PageShell';
 import { siteData } from '../data/siteData';
 import { updatePageMeta, generatePersonSchema, generateBreadcrumbSchema, defaultSEO } from '../utils/seoHelpers';
+import GoogleReviews from '../components/GoogleReviews';
 
 const credentials = [
   { icon: Award, label: 'CeMAP Qualified', detail: 'Certificate in Mortgage Advice and Practice' },
@@ -154,6 +155,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       <section className="py-16 bg-brand-teal text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

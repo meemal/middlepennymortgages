@@ -3,6 +3,7 @@ import { Home, RefreshCw, Building2, Shield, Phone, MessageCircle, ArrowRight, C
 import PageShell from '../components/PageShell';
 import { siteData } from '../data/siteData';
 import { updatePageMeta, generateLocalBusinessSchema, generateFAQSchema, defaultSEO } from '../utils/seoHelpers';
+import GoogleReviews from '../components/GoogleReviews';
 
 const serviceCards = [
   {
@@ -111,6 +112,7 @@ export default function HomePage() {
                 WhatsApp Us
               </a>
             </div>
+            <GoogleReviews compact />
           </div>
         </div>
       </section>
@@ -226,6 +228,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       <section className="py-16 bg-brand-teal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
