@@ -91,14 +91,18 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-brand-grey mb-6">A Personal Approach to Mortgage Advice</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Emma began her career in estate agency in 2013, quickly developing a thorough understanding of the property market and the often complex emotions involved in buying and selling a home. That experience gave her a perspective most mortgage advisers simply do not have.
+                 I started my career in estate agency in 2013 before qualifying as a mortgage adviser in 2017. That experience gave me a strong understanding of both the property market and the real-life challenges that come with buying a home, moving, remortgaging, and protecting what matters most.
+
                 </p>
                 <p>
-                  In 2017, Emma qualified as a mortgage adviser and began helping clients navigate the mortgage process with clarity and confidence. Nearly a decade later, that commitment to personal service remains at the heart of everything she does.
+            For me, mortgage and protection advice is about much more than arranging a product. I want my clients to feel supported from our first conversation onwards, with clear advice, regular updates and someone they can rely on whenever questions arise.
+
                 </p>
                 <p>
-                  Emma advises clients across the UK, offering appointments via Zoom and Teams, making expert mortgage and protection advice accessible wherever you are, without the need to travel.
+                  One thing my clients often tell me is that they value having a single point of contact throughout the process. Rather than feeling passed from person to person, they know they can pick up the phone, send a message, and speak to someone who understands their circumstances and is invested in getting the right outcome for them.
                 </p>
+                <p>I'm proud that many of my clients return to me time and again, and that much of my business comes from recommendations from people I've previously helped.
+Whether you're buying your first home, moving, remortgaging or reviewing your protection needs, my goal is to guide you through the process with confidence, clarity and support every step of the way.</p>
                 <p className="italic text-brand-grey font-medium border-l-4 border-brand-teal pl-4 py-2">
                   "{siteData.valueStatement.substring(0, 180)}..."
                 </p>
