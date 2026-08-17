@@ -67,7 +67,7 @@ export default function FeesPage() {
               <div className="mt-8 bg-slate-50 rounded-2xl p-6 border border-slate-100">
                 <h3 className="font-semibold text-brand-grey mb-4">When Is the Fee Payable?</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                  The mortgage advice fee of {siteData.fee} is payable on application. This means you will not be asked to pay anything until you decide to proceed with a mortgage recommendation.
+                  The mortgage advice fee of {siteData.fee} is payable oonce the mortgage offer has been issued. This means you will not be asked to pay anything until you decide to proceed with a mortgage recommendation.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Initial conversations are entirely free and without obligation. Emma will discuss your needs, explain your options, and only confirm the fee once she has a clear picture of your circumstances.
