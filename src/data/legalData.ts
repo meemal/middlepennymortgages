@@ -12,7 +12,7 @@ We offer advice on mortgages and protection products from across the market. We 
 
 **Fees**
 
-Our standard mortgage advice fee is £395. This fee is payable on application. Financial services are VAT exempt. The exact amount will be confirmed before you proceed and will be documented in your Key Facts Illustration.
+Our standard mortgage advice fee is £395. This fee is payable once the mortgage offer has been issued. Financial services are VAT exempt. The exact amount will be confirmed before you proceed and will be documented in your Key Facts Illustration.
 
 **Your Responsibilities**
 
