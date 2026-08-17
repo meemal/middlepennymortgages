@@ -53,10 +53,10 @@ export default function FeesPage() {
                   <p className="text-sm font-medium text-brand-teal uppercase tracking-widest mb-4">Standard Mortgage Advice Fee</p>
                   <p className="text-7xl font-bold text-brand-grey mb-2">{siteData.fee}</p>
                   <p className="text-gray-500 text-sm mb-6">Financial services are VAT exempt</p>
-                  <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-left">
+                  <div className="bg-brand-teal-light border border-teal-200 rounded-xl p-4 text-left">
                     <div className="flex items-start gap-2">
-                      <Info className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                      <p className="text-amber-800 text-sm leading-relaxed">
+                      <Info className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-teal-800 text-sm leading-relaxed">
                         There may be a fee for mortgage advice. The exact amount will depend on your circumstances and will be confirmed before you proceed. The broker fee will be disclosed clearly in your Key Facts Illustration.
                       </p>
                     </div>
