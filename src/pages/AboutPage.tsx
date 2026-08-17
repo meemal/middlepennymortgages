@@ -103,7 +103,7 @@ export default function AboutPage() {
                 </p>
                 <p>I'm proud that many of my clients return to me time and again, and that much of my business comes from recommendations from people I've previously helped.</p>
                 <p className="italic text-brand-grey font-medium border-l-4 border-brand-teal pl-4 py-2">
-                  "{siteData.valueStatement.substring(0, 180)}..."
+                  "{siteData.valueStatement.substring(0, 280)}..."
                 </p>
               </div>
               <a href="/contact" className="btn-primary mt-8">
