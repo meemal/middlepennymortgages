@@ -369,9 +369,9 @@ export default function ContactPage() {
 
          
 
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
-                <h3 className="font-semibold text-amber-800 mb-2 text-sm">Remote Advice Available</h3>
-                <p className="text-amber-700 text-sm leading-relaxed">
+              <div className="bg-teal-50 border border-teal-200 rounded-xl p-5">
+                <h3 className="font-semibold text-teal-800 mb-2 text-sm">Remote Advice Available</h3>
+                <p className="text-teal-700 text-sm leading-relaxed">
                   Emma advises clients across the UK via Zoom and Teams — so wherever you are, you can access expert mortgage and protection advice from the comfort of your own home.
                 </p>
               </div>
