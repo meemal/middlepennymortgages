@@ -108,14 +108,15 @@ export default function GoogleReviews({ compact = false }: GoogleReviewsProps) {
               <ArrowLeft className="h-4 w-4" aria-hidden="true" />
               <span className="hidden sm:inline">Previous</span>
             </button>
-            <div className="flex items-center gap-1.5" aria-label={`Review ${activeReview + 1} of ${googleReviews.length}`}>
-              {googleReviews.slice(0, Math.min(googleReviews.length, 7)).map((_, index) => (
+            <div className="flex max-w-xs flex-wrap items-center justify-center gap-1.5" aria-label={`Review ${activeReview + 1} of ${googleReviews.length}`}>
+              {googleReviews.map((_, index) => (
                 <button
                   key={index}
                   type="button"
                   onClick={() => setActiveReview(index)}
                   className={`h-2 rounded-full transition-all ${index === activeReview ? 'w-6 bg-brand-teal' : 'w-2 bg-gray-200 hover:bg-brand-teal/50'}`}
                   aria-label={`Show review ${index + 1}`}
+                  aria-current={index === activeReview ? 'true' : undefined}
                 />
               ))}
             </div>
