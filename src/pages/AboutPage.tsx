@@ -101,8 +101,7 @@ export default function AboutPage() {
                 <p>
                   One thing my clients often tell me is that they value having a single point of contact throughout the process. Rather than feeling passed from person to person, they know they can pick up the phone, send a message, and speak to someone who understands their circumstances and is invested in getting the right outcome for them.
                 </p>
-                <p>I'm proud that many of my clients return to me time and again, and that much of my business comes from recommendations from people I've previously helped.
-Whether you're buying your first home, moving, remortgaging or reviewing your protection needs, my goal is to guide you through the process with confidence, clarity and support every step of the way.</p>
+                <p>I'm proud that many of my clients return to me time and again, and that much of my business comes from recommendations from people I've previously helped.</p>
                 <p className="italic text-brand-grey font-medium border-l-4 border-brand-teal pl-4 py-2">
                   "{siteData.valueStatement.substring(0, 180)}..."
                 </p>
