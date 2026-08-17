@@ -95,7 +95,7 @@ export default function AboutPage() {
 
                 </p>
                 <p>
-            For me, mortgage and protection advice is about much more than arranging a product. I want my clients to feel supported from our first conversation onwards, with clear advice, regular updates and someone they can rely on whenever questions arise.
+            Mortgage and protection advice is about much more than arranging a product. I want my clients to feel supported from our first conversation onwards, with clear advice, regular updates and someone they can rely on whenever questions arise.
 
                 </p>
                 <p>
